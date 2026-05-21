@@ -5,6 +5,6 @@ public class Patterns{
         Scanner sc = new Scanner(System.in);
         System.out.print("Enter first value : ");
         int a = sc.nextInt();
-        a = a + 10;
-        System.out.print("a + 10 = " + a);
+        int b = a * 10;
+        System.out.print("b = " + b);
     }}
