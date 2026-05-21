@@ -1,5 +1,9 @@
+import java.util.Scanner;
+
 public class Patterns{
-    public static void main(String[] args){
-        System.out.println("Hello I'm Java!");
-    }
-}
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter your name: ");
+        String name = sc.next();
+        System.out.print("Name: "+ name);
+    }}
