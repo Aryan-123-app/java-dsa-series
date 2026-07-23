@@ -1,6 +1,123 @@
 public class Arrays{
     public static void main(String[] args) {
 
+        int arr[] = {1,4,7,8,3};
+        System.out.println("Original Array: ");
+        for(int a = 0; a <= arr.length-1 ; a++){
+            System.out.print(arr[a] + " ");
+        }
+
+        int start = 0, end = arr.length - 1;
+        while(start < end) {
+            int temp = arr[start];
+            arr[start] = arr[end];
+            arr[end] = temp;
+            start++;
+            end--;
+        }
+        System.out.println("Reversed Array");
+        for(int a = 0; a <= arr.length-1; a++){
+            System.out.print(arr[a] + " ");
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+       /*  int arr[][] = new int[3][4];
+
+        int brr[][] = {{1,2},
+                        {3,5},
+                        {5,7},
+                        {8,10}
+    };
+
+    int sum = 0;
+    int prod = 1;
+    int max = brr[0][0];
+
+    System.out.println("Your given 2D Array is as follows - ");
+    for(int i = 0; i <= brr.length - 1 ; i++){
+        for(int j = 0; j <= brr[i].length - 1; j++){
+            System.out.print(brr[i][j] + " ");
+            sum += brr[i][j];
+            prod *= brr[i][j];
+
+            if(brr[i][j] > max){
+                max = brr[i][j];
+            }
+        }
+        System.out.println();
+    }
+
+    System.out.println("Sum of elements for the given 2D Array = " + sum);
+    System.out.println("Product of elements for the given array = " + prod);
+    System.out.println("Maximum value of element in given array: " + max);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        /*int[][] arr = new int[3][4];
+
+        Scanner sc = new Scanner(System.in);
+
+        for(int i = 0 ; i <= arr.length - 1; i++){
+            for(int j = 0; j <= arr[i].length - 1; j++){
+                System.out.println("Enter value for row: " + i + " and column j: "+ j + " = ");
+                arr[i][j] = sc.nextInt();
+            }
+        }
+
+        System.out.println("Given input 2D array is: ");
+
+        for(int i = 0; i <= arr.length - 1; i++){
+            for(int j = 0; j <= arr[i].length - 1; j++){
+                System.out.print(arr[i][j] + " " );
+            }
+            System.out.println();
+        }
+
+
+
+
+
+
+
+
+        /* 
         // Declaration of 2D Array
         int[][] arr ;
 
@@ -10,22 +127,30 @@ public class Arrays{
         // Init of 2D Array
         int[][] brr = {
                      {1,2},
-                     {3,4},
-                     {5,7},
-                     {9,11}
+                     {3,4,5,2},
+                     {5,7,5,6,7,89,9},
+                     {9}
         };
 
         //System.out.println(brr[3][1]);
         int rowLength = brr.length;
-        int colLength = brr[0].length;
+        //int colLength = brr[0].length;
 
-        for(int row = 0; row <= rowLength - 1; row++){
+        /*for(int row = 0; row <= rowLength - 1; row++){
             for(int col = 0; col <= colLength - 1; col++ ){
                 System.out.print(brr[row][col]+ " ");
             }
             System.out.println();
+        }*/
+
+        /*  Traversal 2-D array
+        for(int row = 0; row <= rowLength-1; row++){
+            for(int col = 0 ; col <= brr[row].length - 1; col++){
+                System.out.print(brr[row][col] + " ");
+            }
+            System.out.println();
         }
-        
+        */
         
         
         
