@@ -5,9 +5,18 @@ public class Main {
         c.startAC();
         c.stopEngine();*/
 
-        Motorcycle m = new Motorcycle( "Splendor", "XLine", 2, "U", "soft");
+       /*Motorcycle m = new Motorcycle( "Splendor", "XLine", 2, "U", "soft");
         m.startEngine();
         m.wheelie();
-        m.stopEngine();
+        m.stopEngine();*/
+
+        /*Calculator c = new Calculator();
+        System.out.println(c.add(2,3));
+        System.out.println(c.add(2,4,5));
+        System.out.println(c.add(2,3,4,4.6));*/
+
+        //Runtime Polymorphism
+        Circle c = new Circle();
+        c.draw();
     }
 }
