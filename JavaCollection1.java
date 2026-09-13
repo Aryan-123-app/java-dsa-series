@@ -126,5 +126,9 @@ public class JavaCollection1 {
         //offer() -> adds the specific element at the end of the linked list. Same as addLast
         System.out.println(listl.offer(200));
         System.out.println(listl);
+
+        //Creation of Vector
+        List<Integer> vector = new Vector<>();
+
     }
 }
