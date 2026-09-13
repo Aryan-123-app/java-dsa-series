@@ -4,7 +4,7 @@ public class JavaCollection1 {
     public static void main(String[] args) {
         // List or Collection -> interface
 
-        //ArrayList -> Concrete Class
+        /*ArrayList -> Concrete Class
         ArrayList<Integer> list = new ArrayList<>();
         //List<Integer> list = new ArrayList<>();
         //Collection<Integer> collection = new ArrayList<>();
@@ -85,6 +85,46 @@ public class JavaCollection1 {
         System.out.println(newlist.isEmpty());
 
         //indexOf -> returns the value of index for a specified element of the list
-        System.out.println(newlist.indexOf(30));
+        System.out.println(newlist.indexOf(30));*/
+
+        //Cloning method is not possible in LinkedList
+
+        //lastIndexOf() -> returns the index of the last occurence of the element
+
+        LinkedList<Integer> listl = new LinkedList<>();
+        //List<Integer> list = new ArrayList<>();
+        //Collection<Integer> collection = new ArrayList<>();
+
+        //Add elements
+        listl.add(10);
+        listl.add(20);
+        listl.add(30);
+        listl.add(40);
+        listl.add(30);
+        listl.add(25);
+
+
+        //addFirst and addLast
+        listl.remove(4);
+        listl.remove(2);
+        listl.remove(1);
+        System.out.println("Printing Original List: " + listl);
+        listl.addFirst(101);
+        System.out.println(listl);
+        listl.addLast(500);
+        System.out.println(listl);
+
+        //removeFirst and removeLast
+        //getFirst and getLast
+
+        //peek -> returns the first element (head) of the linked list.
+        System.out.println(listl.peek());
+
+        //poll() -> returns and removes the first element from the linked list
+        System.out.println(listl.poll());
+
+        //offer() -> adds the specific element at the end of the linked list. Same as addLast
+        System.out.println(listl.offer(200));
+        System.out.println(listl);
     }
 }
