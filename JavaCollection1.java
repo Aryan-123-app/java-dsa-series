@@ -129,6 +129,30 @@ public class JavaCollection1 {
 
         //Creation of Vector
         List<Integer> vector = new Vector<>();
+        vector.add(102);
+        vector.add(105);
+        vector.add(107);
 
+        //Creation of Stack
+        Stack<Integer> stack = new Stack<>();
+        stack.add(509);
+        stack.add(607);
+        stack.add(806);
+        stack.add(495);
+
+        //push() -> adding a new element at the top
+        stack.push(507);
+
+        //pop() -> remove the top most element 
+        stack.pop();
+
+        //peek() -> view the top most element
+        stack.peek();
+
+        //search() -> search an element in the stack
+        System.out.println(stack.search(607));
+
+        //empty() -> checks if stack is empty or not
+        System.out.println(stack.empty());
     }
 }
