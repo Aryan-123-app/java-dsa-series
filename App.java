@@ -12,9 +12,9 @@ public class App {
         A.sleep();*/
 
         //Parameterised Constructor
-        Student A = new Student(1,12,"Rahul",3,"Kiara");
+        //Student A = new Student(1,12,"Rahul",3,"Kiara");
         //Copy Constructor 
-        Student B = new Student(A);
-        System.out.println(B.name);
+        //Student B = new Student(A);
+        //System.out.println(B.name);
     }
 }

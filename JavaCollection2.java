@@ -1,6 +1,6 @@
 import java.util.*;
 
-public class QueueBasics {
+public class JavaCollection2 {
     public static void main(String[] args) {
         Queue<Integer> q = new LinkedList<>();
         //offer() -> extended version of add() , it also handles execptional cases.
