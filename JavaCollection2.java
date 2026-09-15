@@ -101,7 +101,7 @@ public class JavaCollection2 {
 
         HashSet<Student> s1 = new HashSet<>();
 
-        Student r1 = new Student(1,"Aryan");
+        /*Student r1 = new Student(1,"Aryan");
         Student r2 = new Student(2, "Aryaa");
         Student r3 = new Student(1, "Aryan");
 
@@ -109,7 +109,7 @@ public class JavaCollection2 {
         s1.add(r2);
         s1.add(r3);
 
-        System.out.println(s1);
+        System.out.println(s1);*/
 
     }
 }
