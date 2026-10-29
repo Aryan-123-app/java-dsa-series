@@ -80,10 +80,86 @@ public class TwoDArrayProblems {
         return result;
     }
 
+    // 5. Rotate the Matrix Clockwise by 90 Degree
+    static int[][] rotateby90(int[][] matrix){
+        int n = matrix.length;
+
+        int start = 0;
+        int end = n - 1;
+
+        while(start < end){
+            for(int col = 0 ; col < n ; col++){
+                int temp = matrix[start][col];
+                matrix[start][col] = matrix[end][col];
+                matrix[end][col] = temp;
+            }
+            start++;
+            end--;
+        }
+
+        for(int row = 0; row < n; row++){
+            for(int col = row + 1; col < n; col++){
+                int temp = matrix[row][col];
+                matrix[row][col] = matrix[col][row];
+                matrix[col][row] = temp;
+            }
+        }
+
+        return matrix;
+    }
+
+    // 6. Execute Spiral Print of a Matrix
+    static List<Integer> spiral(int[][] matrix){
+        int m = matrix.length;
+        int n = matrix[0].length;
+
+        List<Integer> result = new ArrayList<>();
+
+        int startrow = 0;
+        int endrow = m - 1;
+        int startcol = 0;
+        int endcol = n - 1;
+
+        while(startrow <= endrow && startcol <= endcol){
+            for(int i = startcol; i <= endcol; i++){
+                // Print a row L -> R
+                result.add(matrix[startrow][i]);
+            }
+            startrow++;
+
+            for(int i = startrow; i <= endrow; i++){
+                // Print a col T -> B
+                result.add(matrix[i][endcol]);
+            }
+            endcol--;
+
+            if(startrow <= endrow){
+                // Print a row R -> L
+                for(int i = endcol; i >= startcol; i--){
+                    result.add(matrix[endrow][i]);
+                }
+                endrow--;
+            }
+
+            if(startcol <= endcol){
+                // Print a col B -> T
+                for(int i = endrow; i >= startrow; i--){
+                    result.add(matrix[i][startcol]);
+                }
+                startcol++;
+            }
+        }
+        return result;
+    }
+
     public static void main(String[] args) {
         int[][] arr = {{1,2,3},{4,5,6},{7,8,9}};
-        int[][] answer = transpose(arr);
-        System.out.println(answer);
+        List<Integer> answer = spiral(arr);
+        System.out.println("Spiral Print of Matrix: " + answer);
+        /* int[][] answer = rotateby90(arr);
+        System.out.println(answer); */
+        /* int[][] answer = transpose(arr);
+        System.out.println(answer); */
         
         /* List<Integer> answer = wavePrint(arr, 3, 3);
         System.out.println(answer); */
